@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<title>Lista de clientes</title>
+</head>
+<body>
+
+            <label>Busca en la agenda:
+                <input type="text" name="txtAgenda" list="clientes" />
+                <datalist id="clientes">
+                    {%for cliente in lista_clientes %}
+                    <option value="{{cliente}}"></option>
+                    {% endfor%}
+                </datalist>
+    </form>
+ </body>
+</html>
