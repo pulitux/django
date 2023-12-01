@@ -5,7 +5,8 @@
 <title>Lista de clientes</title>
 </head>
 <body>
-
+    <h1>Lista de clientes</h1>
+    <p>
             <label>Busca en la agenda:
                 <input type="text" name="txtAgenda" list="clientes" />
                 <datalist id="clientes">
@@ -13,6 +14,8 @@
                     <option value="{{cliente}}"></option>
                     {% endfor%}
                 </datalist>
-    </form>
+            </label>
+    <p>
+        </form>
  </body>
 </html>
